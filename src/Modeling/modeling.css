@@ -1,0 +1,65 @@
+.app-modeling-section {
+  background: #7744f8;
+  height: 100%;
+}
+
+.grid {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "scene-explorer actions"
+    "scene-explorer scene-container";
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 12% 88%;
+}
+
+/* Actions Bar */
+.actions {
+  background: #cccccc41;
+  grid-area: actions;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* Scene Explorer */
+.scene-explorer {
+  background: white;
+  grid-area: scene-explorer;
+}
+
+/* Scene */
+.scene-container {
+  background: #e5e5e5;
+  grid-area: scene-container;
+}
+canvas {
+  z-index: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    #282c349c 0%,
+    #282c34ca 35%,
+    #282c34 100%
+  );
+}
+
+/*  */
+
+.sidebar-elements {
+  background: #cccccc41;
+  display: grid;
+  grid-gap: 0.7rem;
+  border-radius: 10px;
+  margin: 0rem 0.7rem;
+  padding: 0.5rem;
+  min-height: 1.5rem;
+  max-height: 24.5rem;
+  overflow-y: auto;
+}
+.sidebar-elements p {
+  margin: 0;
+  font-size: 14px;
+}

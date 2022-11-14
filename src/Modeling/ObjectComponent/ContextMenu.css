@@ -1,0 +1,88 @@
+/* --- Context Menu : Right Click on Object in left Panel --- */
+.wrapper {
+  position: absolute;
+  visibility: hidden;
+  align-self: center;
+  background: white;
+  width: 200px;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+.wrapper .menu {
+  padding: 7px 10px;
+}
+
+.menu .item {
+  list-style: none;
+  background-color: white;
+  margin-bottom: 3px;
+  border-radius: 4px;
+  padding: 6px;
+}
+.menu .item:hover {
+  background-color: #eaeaea;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+
+.kamalqraytou {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu .deleteItem:hover {
+  background-color: #d32929;
+  color: white;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+
+.icon {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.arrowIcon {
+  background-image: url("./assets/right-arrow.png");
+}
+
+.menu .material {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.material .material-menu {
+  position: absolute;
+  background-color: white;
+  width: 150px;
+  top: 4px;
+  left: 190px;
+  padding: 7px 10px;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.1s ease;
+}
+
+.material:hover .material-menu {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.selectMaterial {
+  grid-area: selectMaterial;
+}
+
+.selectIcon {
+  background-image: url("./assets/select.png");
+}

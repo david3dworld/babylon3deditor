@@ -1,0 +1,72 @@
+.objectInTheScene {
+  display: grid;
+  grid-template-areas: "objIcon objName hideShow";
+  grid-template-columns: 15% 70% 15%;
+  border-radius: 0.5rem;
+  padding: 7px;
+}
+
+.objectInTheScene:hover {
+  background: #dfdfdf;
+  cursor: pointer;
+}
+
+.objectUnselected {
+  background: #cccccc41;
+}
+
+.objectSelected {
+  background: #e54040bd;
+}
+
+.objIcon {
+  grid-area: objIcon;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cubeIcon {
+  background-image: url("./assets/cube.png");
+}
+.cylinderIcon {
+  background-image: url("./assets/cylinder.png");
+}
+.sphereIcon {
+  background-image: url("./assets/sphere.png");
+}
+.meshIcon {
+  background-image: url("./assets/mesh.png");
+}
+
+.objName {
+  grid-area: objName;
+  padding-left: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hideShow {
+  grid-area: hideShow;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-width: 0px;
+}
+.hideShow:hover {
+  border-radius: 5px;
+  background-color: #cacacc;
+  cursor: pointer;
+}
+
+.show {
+  background-image: url("./assets/show.png");
+  padding: 0px;
+}
+
+.hide {
+  background-image: url("./assets/hide.png");
+  padding: 0px;
+}

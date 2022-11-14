@@ -1,0 +1,82 @@
+.create {
+  grid-area: create;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 4px;
+}
+
+.transform {
+  grid-area: transform;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.operate {
+  grid-area: operate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-actions {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas: "create transform operate";
+  grid-template-columns: 50% 25% 25%;
+  font-family: "Poppins", sans-serif;
+  background: #eaeaea;
+}
+
+.styled-button {
+  width: 4rem;
+  font-size: medium;
+  padding: 6px 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  transition: 300ms;
+  background-color: #885af8;
+  color: white;
+  border-color: rgb(255, 255, 255);
+  box-shadow: #885af8 0px 0px 5px 0px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.styled-button:hover {
+  cursor: pointer;
+  background-color: #7744f8;
+  color: white;
+  border-color: white;
+}
+
+.upload-button {
+  width: 8rem;
+  font-size: medium;
+  padding: 6px 10px;
+  transition: 300ms;
+  background-color: #885af8;
+  color: white;
+  border-color: rgb(255, 255, 255);
+  box-shadow: #885af8 0px 0px 8px 0px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.upload-button:hover {
+  cursor: pointer;
+  background-color: #875af8ec;
+  color: white;
+  border-color: white;
+}
+
+.uploadIcon {
+  background-image: url("./assets/uploadIcon.png");
+  height: 20px;
+  width: 20px;
+}

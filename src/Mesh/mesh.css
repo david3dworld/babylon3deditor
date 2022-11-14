@@ -1,0 +1,16 @@
+.app-mesh-section {
+  height: 100%;
+}
+
+.mesh-canvas {
+  z-index: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    #282c349c 0%,
+    #282c34ca 35%,
+    #282c34 100%
+  );
+}

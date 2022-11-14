@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "app-header"
+    "app-content";
+  grid-template-rows: 10% 90%;
+}
+
+/* Header */
+.app-header {
+  background: #7744f8;
+  height: 100%;
+  grid-area: app-header;
+  display: grid;
+  grid-template-areas: "brand navbar";
+  grid-template-columns: 20% 80%;
+}
+
+.app-header .brand {
+  background: cadetblue;
+  grid-area: brand;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  align-items: center;
+}
+
+.app-header .navbar {
+  background: cadetblue;
+  grid-area: navbar;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+
+.app-header .navbar a:hover {
+  cursor: pointer;
+  font-weight: 800;
+}
+
+/* Content */
+.app-content {
+  grid-area: app-content;
+  height: 100%;
+}
